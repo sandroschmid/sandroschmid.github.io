@@ -21,5 +21,6 @@
 		align-items: center;
 		padding: var(--gap-normal) var(--gap-large);
     font-size: var(--font-size-small);
+	  text-align: center;
 	}
 </style>

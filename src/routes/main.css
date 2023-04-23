@@ -25,7 +25,6 @@ body {
 	padding: 0;
 	height: 100%;
 	color: var(--color-text2);
-	text-align: center;
 }
 
 body {
@@ -50,9 +49,29 @@ p {
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 section + section {
 	margin-top: var(--gap-xlarge);
+}
+
+.font-caption {
+  font-style: italic;
+  font-size: var(--font-size-small);
+}
+
+.font-text2 {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+strong {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: normal;
+  color: var(--color-primary);
 }

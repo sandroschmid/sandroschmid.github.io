@@ -1,5 +1,4 @@
 <script>
-  import {dev} from "$app/environment";	
   import Header from './Header.svelte';
 	import PageContent from './PageContent.svelte';
 	import Footer from './Footer.svelte';

@@ -20,7 +20,7 @@ export let tags: string[] = [];
     flex-wrap: wrap;
     gap: var(--gap-normal);
     justify-content: center;
-    line-height: 1rem;
+    line-height: 0.8rem;
   }
   
   li {
@@ -33,5 +33,9 @@ export let tags: string[] = [];
     content: '#';
     color: var(--color-text1);
     font-size: var(--font-size-small);
+  }
+
+  ul:not(:first-of-type) {
+    margin-top: var(--gap-large);
   }
 </style>

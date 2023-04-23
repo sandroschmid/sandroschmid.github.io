@@ -4,7 +4,7 @@
 	--font-mono: 'Roboto Mono', monospace;
 
 	--min-page-width: 100px;
-	--max-page-width: 1000px;
+	--max-page-width: 1500px;
 
 	--gap-small: 6px;
 	--gap-normal: calc(var(--gap-small) * 2);

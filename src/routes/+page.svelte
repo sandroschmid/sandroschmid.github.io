@@ -35,29 +35,39 @@
   ]
 </script>
 
-<section>
-  <h2>Hi there 👋</h2>
-  <p>I am a Senior Software Engineer and Team Lead located in Austria. I do full stack web-engineering and cloud things.</p>
-</section>
+<div class="home">
+  <section>
+    <h2>Hi there 👋</h2>
+    <p>I am a Senior Software Engineer and Team Lead located in Austria. I do full stack web-engineering and cloud things.</p>
+  </section>
 
-<section>
-  <TagList {tags} />
-</section>
+  <section>
+    <TagList tags={['Software Engineering', 'Cloud', 'AWS']} />
+    <TagList tags={['Java', 'Kotlin', 'Spring Boot', 'Auth', 'SQL']} />
+    <TagList tags={['TypeScript', 'Angular']} />
+  </section>
 
-<section>
-  <p>You can find me online&hellip;</p>
-  <div class="button-group">
-    {#each links as link}
-      <Button link={link.href} isExternal>{link.label}</Button>
-    {/each}
-  </div>
-</section>
+  <section>
+    <p>You can find me online&hellip;</p>
+    <div class="button-group">
+      {#each links as link}
+        <Button link={link.href} isExternal>{link.label}</Button>
+      {/each}
+    </div>
+  </section>
 
-<section>
-  <CredlyBadge {badges} />  
-</section>
+  <section>
+    <CredlyBadge {badges} />  
+  </section>
+</div>
 
 <style>
+  .home {
+	  text-align: center;
+    max-width: calc(var(--max-page-width) * 0.5);
+    margin: 0 auto;
+  }
+
   .button-group {
     display: flex;
     flex-wrap: wrap;

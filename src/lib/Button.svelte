@@ -2,6 +2,7 @@
   import { createEventDispatcher } from 'svelte';
   import { base } from '$app/paths';
 
+  export let type: 'raised' | 'flat' = 'raised';
   export let link: string | undefined = undefined;
   export let isExternal: boolean = false;
 
@@ -12,11 +13,11 @@
 </script>
 
 {#if link}
-  <a class="button" href={link} target={isExternal ? '_blank' : ''} rel={isExternal ? 'noreferrer' : ''}>
+  <a class={`button ${type}`} href={link} target={isExternal ? '_blank' : ''} rel={isExternal ? 'noreferrer' : ''}>
     <slot />
   </a>
 {:else}
-  <button class="button" on:click={handleClick}>
+  <button class={`button ${type}`} on:click={handleClick}>
     <slot />
   </button>
 {/if}
@@ -25,20 +26,28 @@
   .button {
     padding: var(--gap-normal) var(--gap-large);
     color: var(--color-text1);
-    background: var(--color-surface4);
-    border: 1px solid var(--color-border1);
+    border: 1px solid transparent;
     border-radius: var(--border-radius);
-    text-decoration: none;
     user-select: none;
+    cursor: pointer;
   }
 
-  .button:hover {
-    cursor: pointer;
+  .button.flat {
+    color: var(--color-primary);
+  }
+
+  .button.raised {
+    text-decoration: none;
+    border-color: var(--color-border1);
+    background: var(--color-surface4);
+  }
+
+  .button.raised:hover {
     background: var(--color-surface3);
   }
 
   @media (min-width: 1200px) {
-    .button {
+    .button.raised {
       padding: var(--gap-small) var(--gap-normal);
       font-size: var(--font-size-smaller);
     }
