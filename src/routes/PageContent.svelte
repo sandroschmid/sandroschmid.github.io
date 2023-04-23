@@ -7,6 +7,6 @@
 		height: 100%;
 		max-width: var(--max-page-width);
 	  margin: 0 auto;
-		padding: var(--gap-large) var(--gap-xlarge);
+		padding: var(--gap-large) var(--gap-large);
 	}
 </style>

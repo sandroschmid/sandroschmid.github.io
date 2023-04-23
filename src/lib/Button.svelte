@@ -23,12 +23,11 @@
 
 <style>
   .button {
-    padding: var(--gap-small) var(--gap-normal);
+    padding: var(--gap-normal) var(--gap-large);
     color: var(--color-text1);
     background: var(--color-surface4);
     border: 1px solid var(--color-border1);
     border-radius: var(--border-radius);
-    font-size: var(--font-size-smaller);
     text-decoration: none;
     user-select: none;
   }
@@ -36,6 +35,13 @@
   .button:hover {
     cursor: pointer;
     background: var(--color-surface3);
+  }
+
+  @media (min-width: 1200px) {
+    .button {
+      padding: var(--gap-small) var(--gap-normal);
+      font-size: var(--font-size-smaller);
+    }
   }
 </style>
 

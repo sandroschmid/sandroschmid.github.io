@@ -20,6 +20,7 @@ export let tags: string[] = [];
     flex-wrap: wrap;
     gap: var(--gap-normal);
     justify-content: center;
+    line-height: 1rem;
   }
   
   li {
