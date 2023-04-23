@@ -1,2 +1,8 @@
 # sandroschmid.github.io
-GitHub page
+
+Personal GitHub page.
+
+Run locally with NodeJS installed:
+```
+npx serve
+```
