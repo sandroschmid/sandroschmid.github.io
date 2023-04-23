@@ -2,10 +2,10 @@
   --min-page-width: 500px;
   --max-page-width: 1000px;
   
-  --gap-small: 0.5rem;
-  --gap-normal: 1rem;
-  --gap-large: 2rem;
-  --gap-xlarge: 4rem;
+  --gap-small: 6px;
+  --gap-normal: calc(var(--gap-small) * 2);
+  --gap-large: calc(var(--gap-normal) * 2);
+  --gap-xlarge: calc(var(--gap-large) * 2);
 
   --border-radius: 0.5rem;
 
@@ -26,8 +26,8 @@
   --color-text2-light: hsl(var(--color-hue), 30%, 30%);
   --color-surface1-light: hsl(var(--color-hue), 25%, 90%);
   --color-surface2-light: hsl(var(--color-hue), 20%, 99%);
-  --color-surface3-light: hsl(var(--color-hue), 20%, 92%);
-  --color-surface4-light: hsl(var(--color-hue), 20%, 85%);
+  --color-surface3-light: hsl(var(--color-hue), 15%, 92%);
+  --color-surface4-light: hsl(var(--color-hue), 10%, 85%);
   --color-border1-light: var(--color-surface1-light);
   --color-border2-light: var(--color-surface2-light);
   --shadow-surface-light: var(--color-hue), 10%, 20%;

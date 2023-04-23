@@ -75,10 +75,14 @@ section + section {
   text-decoration: none;
   padding: var(--gap-small) var(--gap-normal);
   color: var(--color-text1);
-  background: var(--color-surface3);
+  background: var(--color-surface4);
   border: 1px solid var(--color-border1);
   border-radius: var(--border-radius);
+}
+
+.button:hover {
   cursor: pointer;
+  background: var(--color-surface3);
 }
 
 .tag-list {
