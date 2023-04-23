@@ -1,0 +1,52 @@
+@import '@fontsource/roboto';
+@import '@fontsource/roboto-slab';
+@import '@fontsource/roboto-mono';
+
+* {
+	box-sizing: border-box;
+}
+
+*:first-child {
+	margin-top: 0;
+}
+
+*:last-child {
+	margin-bottom: 0;
+}
+
+html,
+body {
+	min-width: var(--min-page-width);
+  color-scheme: var(--color-scheme);
+  accent-color: var(--color-accent);
+	font-family: var(--font-body);
+	font-size: var(--base-font-size);
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	color: var(--color-text2);
+	text-align: center;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background: var(--color-surface1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-serif);
+	color: var(--color-text1);
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+section + section {
+	margin-top: var(--gap-xlarge);
+}
